@@ -1,0 +1,48 @@
+.container
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+#title 
+{
+  grid-column-start: 1;
+  grid-column-end: -1; /*this should span the entire page, look into using negative numbers in grid-column-end*/;
+}
+
+.friend
+{
+  grid-column: auto / span 1;
+  grid-row: auto / span 1;
+}
+
+.cousins
+{
+  grid-column: auto / span 1;
+  grid-row: auto / span 1;
+}
+
+.siblings
+{
+  grid-column: auto / span 2;
+  grid-row: auto / span 1;
+}
+
+.aunts
+{
+  grid-column: auto / span 1;
+  grid-row: auto / span 2;
+}
+
+.uncles
+{
+  grid-column: auto / span 1;
+  grid-row: auto / span 2;
+}
+
+.grandparents
+{
+  grid-column: auto / span 2;
+  grid-row: auto / span 2;
+}
